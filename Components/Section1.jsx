@@ -21,7 +21,12 @@ export default function Section1() {
   const bgImg = {
     background: "URL('/images/banner.png')no-repeat",
     backgroundPosition: "right",
-    backgroundSize: "350px",
+    backgroundSize: "300px",
+  };
+  const forMobile = {
+    background: "URL('/images/banner.png')no-repeat",
+    backgroundPosition: "right",
+    backgroundSize: "250px",
   };
   const { data, error, isLoading } = Fetcher("/api/post/");
 
@@ -29,7 +34,7 @@ export default function Section1() {
   if (error) return <Error />;
 
   return (
-    <section className="py-24 pt-44" style={bgImg}>
+    <section className={`py-24 pt-40`} style={bgImg}>
       <div className="container mx-auto md:px-20">
         <h1 className="font-bold text-4xl pb-12 text-center">Treading</h1>
         <Swiper slidesPerView={1} loop={true} autoplay={{ delay: 2000 }}>
