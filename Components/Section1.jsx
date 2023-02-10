@@ -7,7 +7,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import { Fetcher } from "@/lib/fetcher";
 import "swiper/css";
+
+/***_______  Error compo   ________**/
+
 import Error from "../Components/_Child/Error";
+/***_______  Loading compo   ________**/
+
 import Spinner from "./_Child/Spinner";
 
 export default function Section1() {

@@ -1,4 +1,4 @@
-const obj={
+const data = {
   Trending: [
     {
       id: 1,
@@ -354,4 +354,8 @@ const obj={
     },
   ],
 };
-export default obj
+// export { data };
+
+export default async function handler(req, res) {
+  res.status(200).json(data);
+}
