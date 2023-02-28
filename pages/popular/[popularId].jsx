@@ -18,6 +18,7 @@ function Article({ data, allPost }) {
     <>
       <Head>
         <title>Propular post</title>
+        <link rel="icon" href={`${author?.img}`} />
       </Head>
       <Layout>
         <section className="container mx-auto md:px-2 py-16 pt-44 w-1/2">
