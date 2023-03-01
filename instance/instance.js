@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:8080";
-// const baseUrl = "https://employ-management-system.vercel.app";
+const baseUrl =
+  process.env.NEXT_PUBLIC_PREFIX_BASE_URL_SERVER || "http://localhost:8080";
 
 // axios.defaults.withCredentials = true;
 const instance = axios.create({

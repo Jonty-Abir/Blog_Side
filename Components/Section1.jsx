@@ -94,7 +94,6 @@ function Slide({ data }) {
           {/* <Author/> */}
         </div>
       </div>
-      ;
     </>
   );
 }
